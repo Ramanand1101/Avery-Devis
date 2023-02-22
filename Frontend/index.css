@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+/* ====================================== Logo ,cart and profile code start here ======================================= */
+.main{
+    width:100%;
+
+    margin: auto;
+}
+
+.icon{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.icon>div{
+    width:100%;
+    height: 100px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex; 
+}
+
+.profile>div{
+    width:40%;
+    margin: auto;
+}
+.logo>img{
+    width:90%;
+    height:100%;
+    margin: auto;
+}
+.cart{
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.cart>div{
+    width:60%;
+    margin: auto;
+    
+}
+.cart>div:nth-child(1){
+    width: 100%;
+    background-color:#ebedf3;
+    margin-left: 10%;
+}
+.search{
+    width:100%;
+    border: 1px solid black;
+    margin: auto;
+    padding-left: 10px;
+    height: 40px;
+    margin: 20%;
+}
+.search-text{
+    width: 150%;
+    height:38px;
+    border: none;
+    background-color:#ebedf3;
+}
+.search{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* ============================================== Navbar code start here ======================================================= */
+.navbar{
+    width:100%;
+    margin:auto;
+    padding: 10px;
+    background-color:#ebedf3;
+   
+}
+.navbar-list{
+    width: 50%;
+    margin:auto;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    list-style: none;
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    width: 100%;
+    padding:0px 10px 0px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    border-right: 2px solid black;
+    height: 30px;
+    font-weight: 7px;
+    color:#876da1;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+}
+.navbar-link:hover,
+.navbar-link:active{
+    color:black;
+    font-size: 1.3rem;
+    background-color: white;
+}
+/* ==================================================== Banner Section code start here ================================================= */
+.banner {
+    position: relative;
+    height: 100vh;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .banner p {
+    font-size: 2.0rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    color:#fecf00;
+
+    text-align: center;
+  }
+  
+  .banner .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .banner .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+  
+  .banner .button-primary {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .banner .button-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .banner .button-secondary:hover {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+   
+    overflow: hidden;
+  }
+  .slider-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+  }
+  .slider-item {
+    position: relative;
+    flex: 0 0 calc(100% / 3); /* adjust this value to change the number of images displayed */
+    text-align: center;
+  }
+  .slider-item img {
+    max-width:90%;
+    height:100%;
+  }
+  .slider-caption {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    z-index: 1;
+  }
+
+  .slider-caption p{
+    color:#fecf00
+  }
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .prev-btn {
+    left: 0;
+  }
+  .next-btn {
+    right: 0;
+  }
+  .hero-banner {
+    background-image: url('https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw73d084aa/merchAssets/SS23/Homepage/hp/henley-hp2-desktop.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+  }
+  
+  .banner-content {
+    margin:5%;
+    color: #fff;
+  }
+  .banner-content h1{
+    color:#ceb45c ;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+      /* ================================================================================================================================
+footer grid code css here
+  ================================================================================================================================== */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  /* Style for each grid item */
+  .grid-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+    /* ================================================================================================================================
+footer banner code css here
+  ================================================================================================================================== */
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .hero-banner {
+      height: 330px;
+      
+    }
+  
+    h1 {
+      font-size: 25px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media screen and (max-width: 480px) {
+    .hero-banner {
+      height: 240px;
+      
+    }
+  
+    h1 {
+      font-size: 15px;
+    }
+  
+    p {
+      font-size: 10px;
+    }
+  }
+    /* ================================================================================================================================
+  Slider code css here
+  ================================================================================================================================== */
+  @media screen and (max-width: 700px) {
+    .banner{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .slider{
+      width:100%;
+
+      margin: auto;
+      margin: 10px;
+      margin-top: 20px;
+  
+    }
+    .slider-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px #000;
+      z-index: 1;
+    }
+    .slider-caption h3{
+      font-size: 15px;
+    }
+    .slider-caption p{
+      font-size: 15px;
+    }
+    .slider-wrapper{
+      display: grid;
+      gap:10px;
+      grid-template-columns: repeat(2,1fr);
+    }
+   
+    .prev-btn,.next-btn{
+      display:none;
+    }
+  }
+
+  
+    /* ================================================================================================================================
+footer grid responsive code css here
+  ================================================================================================================================== */
+  /* Responsive styles for different screen sizes */
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Responsive styles for images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
