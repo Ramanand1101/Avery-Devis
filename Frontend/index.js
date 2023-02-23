@@ -1,3 +1,5 @@
+
+// ========================================================= Slider js code present here =================================================
 const sliderWrapper = document.querySelector('.slider-wrapper');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -19,3 +21,4 @@ nextBtn.addEventListener('click', () => {
   }
   sliderWrapper.style.transform = `translateX(-${slideIndex * (100 / 3)}%)`; /* adjust this value to change the number of images displayed */
 });
+
