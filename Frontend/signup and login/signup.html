@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up | By Code Info</title>
+    <link rel="stylesheet" href="./signup.css" />
+    <link rel="stylesheet" href="../index.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/d331f272dc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="main">
+      <!-- =============================================== Logo section and upper section Start here ================================= -->
+      <div class="icon">
+          <div class="profile">
+              <div>
+                  <i class="fa-regular fa-user fa-2x"></i>
+                  <i class="fa fa-light fa-location-dot fa-2x"></i>
+              </div>
+          </div>
+          <div class="logo">
+              <img src="../logo.jpg" alt="">
+          </div>
+          <div class="cart">
+              <div class="search">
+                  <div>
+                      <input class="search-text" type="text" placeholder="search" >
+                      
+                  </div>
+                  <div>
+                      <i class="gg-search" style="margin-top:10px;margin-left: 100px;"> </i>
+                  </div>
+                 
+              </div>
+              <div>
+                  <i class="gg-shopping-bag" style="margin-left: 40%; height: 30px;"></i>
+              </div>
+          </div>
+      </div>
+      </div>
+    
+    <div class="signup-box">
+      <div class="in-signup">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form>
+        <label>First Name</label>
+        <input type="text" id=fname placeholder="Enter your first name" />
+        <label>Last Name</label>
+        <input type="text" id="lname" placeholder="Enter your last name" />
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email id" />
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your Password" />
+        <button onclick="SignUp()">SignUp</button>
+      </form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+        <p class="para-2">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      </p>
+      </div>
+    </div>
+   
+  </body>
+</html>
+<script src="./signup.js"></script>
