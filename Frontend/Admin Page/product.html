@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./product.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <div class="ad-page">
+        <div class="pro-data">
+            <div>
+                <h2>Add product</h2>
+                <label>Name</label>
+                <br>
+                <input type="text" id="name" placeholder="product-name">
+                <br>
+                <label>Price</label>
+                <br>
+                <input type="text" id="price" placeholder="price">
+                <br>
+                <label>Category</label>
+                <br>
+                <input type="text" id="category" placeholder="product-category">
+                <br>
+                <label>Size</label>
+                <br>
+                <input type="text" id="size" placeholder="product-size">
+                <br>
+                <label>Image</label>
+                <br>
+                <input type="text" id="image" placeholder="product-image">
+                <br>
+                <label>Description</label>
+                <br>
+                <input type="text" id="description" placeholder="product-description">
+                <br>
+                <label>Rating</label>
+                <br>
+                <input type="text" id="rating" placeholder="product-rating">
+                <br>
+                <button class="btn" onclick="product()" >Add Product</button>
+            </div>  
+            
+        </div>
+        <div id="products">
+            <h1>Products</h1>
+            <table>
+                <thead>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>Rating</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</body>
+</html>
+<script src="./admin.js"></script>

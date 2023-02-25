@@ -43,14 +43,16 @@
             </div>
         <!-- =========================================================== login code here ============================================= -->
         <div class="login-box">
-          <h1>Login</h1>
-          <form>
+        <div class="form">
+            <h1>Login</h1>
             <label>Email</label>
-            <input type="email" placeholder="" />
+            <input type="email" id="email" placeholder="" />
             <label>Password</label>
-            <input type="password" placeholder="" />
-            <button onclick="logIn">Login</button>
-          <closeform></closeform></form>
+            <input type="password" id="password" placeholder="" />
+            <button onclick="logIn()">Login</button>
+
+        </div>
+        
           <p class="para-2">
             Not have an account? <a href="signup.html">Sign Up Here</a>
           </p> 
@@ -59,3 +61,4 @@
 </body>
 </html>
 <script src="./signup.js"></script>
+<script src="./login.js"></script>
