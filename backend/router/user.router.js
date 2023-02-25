@@ -7,6 +7,7 @@ const userRouter=express.Router()
 //user registered code here 
 userRouter.post("/register",async(req,res)=>{
     const {fname,lname,email,password}=req.body
+    
     try{
         const dupliuser=await UserModel.find({email})
         if(dupliuser.length>0){

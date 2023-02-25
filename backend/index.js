@@ -2,6 +2,8 @@
 const express=require("express");
 const{connection}=require("./db")
 const {userRouter}=require("./router/user.router")
+const {productRouter}=require("./router/product.route")
+const{authenticate}=require("./user.middleware/authenticatemiddleware")
 const cors=require("cors")
 
 const app=express();
@@ -13,6 +15,9 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/user",userRouter)
+app.use(authenticate)
+app.use("/product",productRouter)
+
 
 app.listen(8080,async() => {
     try{

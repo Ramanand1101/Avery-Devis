@@ -1,0 +1,109 @@
+
+
+h1{
+    text-align: center;
+   
+}
+
+.ad-page{
+    width:100%;
+    background-color:#93939b;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    border:1px solid black;
+
+}
+.pro-data{
+    width:40%;
+    
+    background-color:#1a191e ;
+    padding: 30px;
+}
+.pro-data>div{
+    width: 50%;
+    
+    margin: auto;;
+}
+.pro-data>div>label{
+    margin-top:10px;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+.pro-data>div>input{
+    padding:5px;
+}
+h2{
+    color:aliceblue;
+    text-align: center;
+}
+.pro-data{
+    width: 50%;
+    margin: auto;
+}
+.btn{
+    margin-top: 20px;
+    width: 65%;
+    padding: 10px;
+    background-color:white;
+    color:#001f49;
+    font-size: 15px;
+}
+.pro-sh{
+    width: 60%;
+    border: 1px solid black;
+}
+.pro-sh>h1{
+    color: white;
+}
+#product-img{
+    width:50%;
+}
+.product{
+    background-color: #fff;
+}
+.row{
+    width:50%;
+    border:1px solid black;
+    height: 30px;
+}
+#products{
+    text-align: center;
+    width: 80%;
+}
+
+#products table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: rgba(253, 253, 253, 0.2) 0px 2px 8px 0px;
+}
+
+#products th{
+    background-color: aquamarine;
+    color: black;
+}
+
+#products td, #products th{
+    background-color:white;
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+
+#delete-btn{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    border: none;
+   
+}
+
+#product-img{
+    width: 100%;
+}
