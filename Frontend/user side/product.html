@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============================================== Navbar page link here ============================================================================ -->
     <script src="https://kit.fontawesome.com/d331f272dc.js" crossorigin="anonymous"></script>
     <link href='https://css.gg/search.css' rel='stylesheet'>
     <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
-    <title>Landing-Page</title>
+    <link rel="stylesheet" href="../index.css">
+<!-- ============================================== product section page link here ============================================================================ -->
+
+<link rel="stylesheet" href="./product.css">
+    <title>Dashboard</title>
 </head>
 <body>
     <div class="main">
@@ -24,7 +28,7 @@
                 </div>
             </div>
             <div class="logo">
-                <img src="./logo.jpg" alt="">
+                <img src="../logo.jpg" alt="">
             </div>
             <div class="cart">
                 <div class="search">
@@ -33,7 +37,7 @@
                         
                     </div>
                     <div>
-                        <i class="gg-search" style="margin-top:10px;margin-left: 100px;"> </i>
+                        <i class="gg-search" onclick="search()" style="margin-top:10px;margin-left: 100px;"> </i>
                     </div>
                    
                 </div>
@@ -48,7 +52,7 @@
             <div class = "brand-and-icon">
               <a href = "index.html" class = "navbar-brand">Avery Devis</a>
               <button type = "button" class = "navbar-toggler">
-                <i class = "fas fa-bars"></i>
+                <i class = "fas fa-bars search-icon"></i>
               </button>
             </div>
     
@@ -257,200 +261,108 @@
             </div>
           </nav>
         </div>
-    </div>
-     <!-- ================================================== Banner section video here ========================================================== -->
-    <section class="hero">
-      <video autoplay muted loop>
-        <source src="./23311066-4102ecdd.mp4" type="video/mp4">
-      </video>
-      <div class="hero-text">
-        <h1>Timeless Classics
-          For Working in Every Time Zone</h1>
-        <p>4 SHIRTS OR POLOS FOR $239
-          SAVE UP TO $235</p>
-      </div>
-      <div class="hero-buttons">
-        <a href="#">Learn More</a>
-        <a href="#">Contact Us</a>
-      </div>
-    </section>
-   
+        <!-- ===================================================== Product Section here ======================================================== -->
+        <div class="p-section">
+            <div class="f-section">
+              <div id="filters">
+                <span>
+                    <h3>Filter By Category</h3>
+                    <select name="" id="filter-by-category">
+                        <option value="">Select</option>
+                        <option value="Shirts">Shirts</option>
+                        <option value="Sweater">Sweater</option>
+                        <option value="Blazer">Blazer</option>
+                    </select>
+                </span>
     
-      <!-- ====================================================== Slider code start here =============================================== -->
-        <div class="slider">
-          <div class="slider-wrapper">
-            <div class="slider-item">
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dwa86b7a50/merchAssets/SS23/Homepage/hero-carousel/hc-0026.jpg" alt="Image 1">
-              <div class="slider-caption">
-                <h3>CASUAL SHIRTS</h3>
-                <p>4 for $239</p>
-              </div>
+                <span>
+                    <h3>Sort By Price</h3>
+                    <select name="" id="sort-by-price">
+                        <option value="">Select</option>
+                        <option value="htl">High to Low</option>
+                        <option value="lth">Low to High</option>
+                    </select>
+                </span>
+    
+                <span>
+                    <h3>Sort By Ratings</h3>
+                    <select name="" id="sort-by-ratings">
+                        <option value="">Select</option>
+                        <option value="5">5</option>
+                        <option value="4a">4 & above</option>
+                        <option value="3a">3 & above</option>
+                    </select>
+                </span>
             </div>
-            <div class="slider-item">
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw34fe9658/merchAssets/SS23/Homepage/hero-carousel/hc-012.jpg" alt="Image 2">
-              <div class="slider-caption">
-              <h3>SUITS</h3>
-              <p>Ultimate Performance</p>
-              </div>
-            </div>
-            <div class="slider-item">
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw37e622e1/merchAssets/SS23/Homepage/hero-carousel/hc-013.jpg" alt="Image 3">
-              <div class="slider-caption">
-                <h3>SWEATERS</h3>
-                <p>NEW COLORS</p>
-              </div>
-            </div>
-            <div class="slider-item">
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dwb8f934b4/merchAssets/SS23/Homepage/hero-carousel/hc-014.jpg" alt="Image 4">
-              <div class="slider-caption">
-                <h3>PANTS</h3>
-                <p>Buy2, Save $20</p>
-              </div>
-            </div>
-            <div class="slider-item">
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw2f6ecc84/merchAssets/SS23/Homepage/hero-carousel/hc-018.jpg" alt="Image 5">
-              <div class="slider-caption">
-                <h3>POLOS</h3>
-                <p>4 for $239 Save up to $235</p>
-              </div>
-            </div>
-            <div class="slider-item">
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw7ad03bfa/merchAssets/SS23/Homepage/hero-carousel/hc-019.jpg" alt="Image 6">
-              <div class="slider-caption">
-                <h3>LINEN</h3>
-                <p>New Collection</p>
-              </div>
-            </div>
-          </div>
-          <button class="prev-btn">&#10094;</button>
-          <button class="next-btn">&#10095;</button>
-        </div>
-      <!-- ====================================================== banner footer ========================================================= -->
-      <div class="hero-banner">
-        <div class="banner-content">
-          <h1>NEW</h1>
-          <p>Meet the Henley Weave,
-            our shirt of the season.</p>
-            <p>You won’t find this dobby weave anywhere else. The cutaway collar has a modern feel for formal  and relaxed looks, and natural stretch from 100% cotton keeps things comfy.
-             
-           This non-iron hero comes in 10 designs and 3 fits.
-              Pick from checks, fresh pastels and classic blues.</p>
-          <button>SHOP THE COLLECTION</button>
-        </div>
-      </div>
-         <!-- ====================================================== grid footer ========================================================= -->
-         <div class="grid-footer">
-          <div class="grid-content">
-            <div>
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw457fbf0b/merchAssets/SS23/Homepage/wide-banner/hp1-editorial-ny-yets.jpg">
-            </div>
-            <div>
-              <h3>New Yorks jets official Partner</h3>
-              <p>Two iconic cities,two buzzworthy brands,one very exciting partnership</p>
-              <button>LEARN MORE</button>
-            </div>
-          </div>
-          <div class="grid-content">
-            <div>
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw63cc6f39/merchAssets/SS23/Homepage/wide-banner/hp1-editorial-icons.jpg">
-            </div>
-            <div  class="grid-content">
-              <h3>  TRYYWHITT ICONS</h3>
-              <p>The collection that every man should own . Timeless,versatile piece designed to slot into your wardorabe with ease </p>
-              <button>SHOP NOW</button>
-            </div>
-          </div>
-          <div  class="grid-content">
-            <div>
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dw7bbd9c20/merchAssets/SS23/Homepage/wide-banner/hp1-editorial-seasonal-look-desktop.jpg">
-            </div>
-            <div>
-              <h3>SEASONAL LOOKS</h3>
-              <p>Discover the latest seasonal looks,whether you're dressing for the commute,a work trip or weekend away.Stay comfy in style.</p>
-              <button>SHOP NOW</button>
-            </div>
-          </div>
-          <div  class="grid-content">
-            <div>
-              <img src="https://www.charlestyrwhitt.com/on/demandware.static/-/Library-Sites-CTShirtsSharedLibrary/default/dwaaf522b0/merchAssets/SS23/Homepage/wide-banner/hp1-editorial-04-desktop.jpg">
-            </div>
-            <div>
-              <h3>A TAILORED LIFE</h3>
-              <p>Meet unique leaders and explore style hints and trips through Nick wheeler's interviews in A Tailored Life.</p>
-              <button>EXPLORE MORE</button>
-            </div>
-          </div>
-         </div>
-         <!-- =================================================footer second last banner ===================================================-->
-         <div class="banner-container">
-          <div class="banner-text">
-            <h1>PERSONALISED SHIRT DESIGNS</h1>
-            <p>PERSONALISED SHIRT DESIGNS</p>
-            <p>Our new Custom Shirt tool is here! Get creative as you pick your fabric, collar, cuffs and all the details that make it one-of-a-kind, then get it fitted to your measurements.</p>
-          </div>
-          <div class="banner-buttons">
-            <button>Learn More</button>
-            <button>Contact Us</button>
-          </div>
-         </div>
-         <!-- =================================================footer code present here ====================================================-->
-         <footer>
-          <div class="footer-container">
-            <div class="footer-section help">
-              <h4>Help</h4>
-              <ul>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#"> SHIPPING</a></li>
-                <li><a href="#">SIZE GUIDES</a></li>                       
-                <li><a href="#">SHIRT MULTIBUY</a></li>                         
-                <li><a href="#">FIND A STORE</a></li>                        
-                <li><a href="#">CONTACT US</a></li>                         
-                <li><a href="#">WHERE IS MY ORDER?</a></li>                        
-              </ul>
-            </div>
-            <div class="footer-section legal">
-              <h4>Legal</h4>
-              <ul>
-                <li><a href="#">TERMS AND CONDITIONS</a></li>
-                <li><a href="#">PRIVACY POLICY</a></li>
-                <li><a href="#">OUR COOKIE POLICY</a></li>
-                <li><a href="#">ACCESSIBILITY STATEMENT</a></li>
-                <li><a href="#">ETHICAL TRADING POLICY</a></li>
-                <li><a href="#">MODERN SLAVERY STATEMENT</a></li>
-                <li><a href="#">INCLUSIVE WORKING STATEMENT</a></li>
-                <li><a href="#">MY PERSONAL INFORMATION</a></li>
-              </ul>
-            </div>
-            <div class="footer-section more-info">
-              <h4>More Info</h4>
-              <ul>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CUSTOM SHIRTS</a></li>
-                <li><a href="#">GIFT VOUCHERS</a></li>
-                <li><a href="#">WHOLESALE PARTNERSHIPS</a></li>
-                <li><a href="#">COUPON CODES</a></li>
-                <li><a href="#">REQUEST A CATALOGUE</a></li>
-                <li><a href="#">DOING THINGS PROPERLY</a></li>
-              </ul>
-            </div>
-            <div class="footer-section career">
-              <h4>Career</h4>
-              <ul>
-                <li><a href="#">UK VACANCIES</a></li>
-                <li><a href="#"> US VACANCIES</a></li>
-                <li><a href="#">OUR BELIEFS</a></li>
-                <li><a href="#">OUR BENEFITS</a></li>
-                <li><a href="#">OUR PEOPLE</a></li>
-              </ul> 
-            </div>
-          </div>
-        </footer>
-        
-        
 
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
-<script src="index.js"></script>
+            </div>
+            <div class="cat-section">
+                <div class="p-container">
+
+                </div>
+            </div>
+        </div>
+    
+        
+      
+         <!-- ================================================== footer section ========================================================== -->
+
+         <footer>
+            <div class="footer-container">
+              <div class="footer-section help">
+                <h4>Help</h4>
+                <ul>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#"> SHIPPING</a></li>
+                  <li><a href="#">SIZE GUIDES</a></li>                       
+                  <li><a href="#">SHIRT MULTIBUY</a></li>                         
+                  <li><a href="#">FIND A STORE</a></li>                        
+                  <li><a href="#">CONTACT US</a></li>                         
+                  <li><a href="#">WHERE IS MY ORDER?</a></li>                        
+                </ul>
+              </div>
+              <div class="footer-section legal">
+                <h4>Legal</h4>
+                <ul>
+                  <li><a href="#">TERMS AND CONDITIONS</a></li>
+                  <li><a href="#">PRIVACY POLICY</a></li>
+                  <li><a href="#">OUR COOKIE POLICY</a></li>
+                  <li><a href="#">ACCESSIBILITY STATEMENT</a></li>
+                  <li><a href="#">ETHICAL TRADING POLICY</a></li>
+                  <li><a href="#">MODERN SLAVERY STATEMENT</a></li>
+                  <li><a href="#">INCLUSIVE WORKING STATEMENT</a></li>
+                  <li><a href="#">MY PERSONAL INFORMATION</a></li>
+                </ul>
+              </div>
+              <div class="footer-section more-info">
+                <h4>More Info</h4>
+                <ul>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">CUSTOM SHIRTS</a></li>
+                  <li><a href="#">GIFT VOUCHERS</a></li>
+                  <li><a href="#">WHOLESALE PARTNERSHIPS</a></li>
+                  <li><a href="#">COUPON CODES</a></li>
+                  <li><a href="#">REQUEST A CATALOGUE</a></li>
+                  <li><a href="#">DOING THINGS PROPERLY</a></li>
+                </ul>
+              </div>
+              <div class="footer-section career">
+                <h4>Career</h4>
+                <ul>
+                  <li><a href="#">UK VACANCIES</a></li>
+                  <li><a href="#"> US VACANCIES</a></li>
+                  <li><a href="#">OUR BELIEFS</a></li>
+                  <li><a href="#">OUR BENEFITS</a></li>
+                  <li><a href="#">OUR PEOPLE</a></li>
+                </ul> 
+              </div>
+            </div>
+          </footer>
+          
+    </div>
+    </body>
+    </html>
+    <script src="./ad-product.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="../script.js"></script>

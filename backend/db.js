@@ -1,10 +1,11 @@
-//install the mongoose module
-const mongoose = require("mongoose")
+const mongoose=require("mongoose")
+require('dotenv').config()
 
-//connect to the database
-const connection=mongoose.connect("mongodb+srv://ramanand:ramanand@cluster0.8zattbo.mongodb.net/AveryDevis?retryWrites=true&w=majority")
+//====================== Establish Connection ==================================
+const connection=mongoose.connect(process.env.mongoURL)
+
+//======================= Exports ==============================================
 
 module.exports={
     connection
 }
-

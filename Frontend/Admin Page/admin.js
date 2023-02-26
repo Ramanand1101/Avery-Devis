@@ -23,6 +23,8 @@ const product=()=>{
     .then(res=>console.log(res))
     .catch(err=>console.log(err))
 }
+
+//Create product data code here
 let container=document.querySelector("#products tbody");
     fetch("http://localhost:8080/product/",{
         method:"GET",
@@ -51,8 +53,6 @@ let container=document.querySelector("#products tbody");
             image.setAttribute("src",element.image)
             image.setAttribute("id","product-img")
             
-            
-           
             let brand=document.createElement("td")
             brand.innerText=element.name     
              
@@ -70,8 +70,27 @@ let container=document.querySelector("#products tbody");
             let rating=document.createElement("td")
             rating.innerText=element.rating 
 
+            let td2=document.createElement("td")
+            let del=document.createElement("button")
+            del.innerText="Delete"
+            del.setAttribute("class","del-btn")
+            del.addEventListener("click", ()=>{
+                deleteNote(element._id)
+            })
+           
             td1.append(image)
-            card.append(td1,brand,price,category,size,desc,rating);
+            td2.append(del)
+            card.append(td1,brand,price,category,size,desc,rating,td2);
             container.append(card)
         });
+    }
+    //delete product data code here
+
+    const deleteNote=(noteID)=>{
+        fetch(`http://localhost:8080/product/delete/${noteID}`,{
+            method:"DELETE",
+            headers:{
+                "Authorization":localStorage.getItem("token")
+            }
+        })
     }

@@ -107,3 +107,11 @@ h2{
 #product-img{
     width: 100%;
 }
+.del-btn{
+    padding: 5px 10px 5px 10px;
+    background-color: #0e3c64 ;
+    color: white;
+}
+.h1{
+    color: #fff;
+}

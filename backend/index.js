@@ -1,10 +1,13 @@
 //express packaege install
 const express=require("express");
 const{connection}=require("./db")
+require('dotenv').config()
 const {userRouter}=require("./router/user.router")
 const {productRouter}=require("./router/product.route")
+const {cartProductsRouter} = require("./router/cartroute");
 const{authenticate}=require("./user.middleware/authenticatemiddleware")
 const cors=require("cors")
+
 
 const app=express();
 app.use(express.json())
@@ -17,15 +20,17 @@ app.get("/",(req,res)=>{
 app.use("/user",userRouter)
 app.use(authenticate)
 app.use("/product",productRouter)
+app.use("/cartproducts", cartProductsRouter);
 
 
-app.listen(8080,async() => {
+app.listen(process.env.port,async()=>{
     try{
         await connection
-        console.log("connected to db")
+        console.log("Connected to the DB")
+          
     }
     catch(err){
-        console.log({"msg":"not connected to db","err":err.message})
+        console.log({"msg":"Not connect to DB","error":err.message})
     }
-    console.log("Server is running on port 8080");
+    console.log(`Running the server at port 8080` )
 })
