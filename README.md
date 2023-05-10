@@ -122,11 +122,9 @@ DELETE /doctor/delete
 
  <div align = "center">
    <h2>Landing Page</h2>
-   <img width="956" alt="Landing_Page" src="https://github.com/Rubel011/unarmed-science-115/assets/115465871/4c22ff1b-74be-4591-96e3-d6def5e550c5">
-   <br>
-    <img width="956" alt="Landing_Page" src="https://github.com/Rubel011/unarmed-science-115/assets/115465871/47a149fd-61c6-4316-8acb-5d99b418a8b2">
-   <h2>Doctor Dashboard</h2>
-   <img width="960" alt="User_Dashboard" src="https://github.com/Rubel011/unarmed-science-115/blob/main/frontend/assests/Doctor.png">
+   <img width="956" alt="Landing_Page" src="https://github.com/Ramanand1101/Avery-Devis/blob/main/Frontend/Screenshot%202023-05-10%20142730.png">
+   <h2>Sign-up/Sign-In Dashboard</h2>
+   <img width="960" alt="User_Dashboard" src="https://github.com/Ramanand1101/Avery-Devis/blob/main/Frontend/Screenshot%202023-05-10%20142730.png">
    <br>
     
    
