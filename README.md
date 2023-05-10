@@ -122,7 +122,7 @@ DELETE /doctor/delete
 
  <div align = "center">
    <h2>Landing Page</h2>
-   <img width="956" alt="Landing_Page" src="https://github.com/Ramanand1101/Avery-Devis/blob/main/Frontend/Screenshot%202023-05-10%20142730.png">
+   <img width="956" alt="Landing_Page" src="https://github.com/Ramanand1101/Avery-Devis/blob/main/Frontend/Screenshot%202023-05-10%20142657.png">
    <h2>Sign-up/Sign-In Dashboard</h2>
    <img width="960" alt="User_Dashboard" src="https://github.com/Ramanand1101/Avery-Devis/blob/main/Frontend/Screenshot%202023-05-10%20142730.png">
    <br>
