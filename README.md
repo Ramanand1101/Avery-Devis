@@ -1,7 +1,7 @@
 ## ABOUT THE PROJECT
 <h1> Avery Devis </h1>
 <div align="center"  width="40" height="55">
-  <img src="frontend/images/Blue Pet Care Clinic Business Logo.png" alt="html" width="200" height="100"/>
+  <img src="https://github.com/Ramanand1101/Avery-Devis/blob/main/Frontend/Avery%20Devis%20Logo.jpg" alt="html" width="200" height="100"/>
   <br>
   <br>
   <p>Avery Devis is a renowned British clothing brand specializing in high-quality menswear. Their website serves as an online platform where customers can browse and purchase a wide range of stylish and sophisticated clothing items, including shirts, suits, trousers, jackets, knitwear, shoes, and accessories. </p>
@@ -112,14 +112,6 @@ GET /product/
 POST /product/create
 DELETE /doctor/delete
 ```
-#### Appointment 
-```javascript
-GET /appointment/get
-GET /appointment/getall
-POST  /appointment/create
-PATCH /product/update/:id
-DELETE /product/delete/:id
-```
     
    
 <div align = "center">  
@@ -160,21 +152,13 @@ DELETE /product/delete/:id
 | :----: | 
    
 
-[FRONTEND](https://vetspot.netlify.app/)
+[FRONTEND](https://jocular-genie-ed49c8.netlify.app/)
 
-[BACKEND](https://troubled-pig-life-jacket.cyclic.app/)
+
 
  
 | `Authors` |
 | :-------: | 
 
  [RAMANAND TIWARI](https://github.com/ramanand1101) 
- 
- [RUBEL FORIDI](https://github.com/rubel011) 
- 
- [ASHISH KUMAR PALAI](https://github.com/ashishkumarpalai) 
- 
- [PRITI TIWARI](https://github.com/prititi) 
- 
- [HARIOM](https://github.com/hariomfw21) 
  
