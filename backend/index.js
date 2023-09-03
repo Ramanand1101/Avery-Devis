@@ -16,6 +16,8 @@ app.use(cors())
 app.get("/",(req,res)=>{
     res.send("Home page")
 })
+//start contain index.js
+
 
 app.use("/user",userRouter)
 app.use(authenticate)
